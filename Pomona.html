@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--This is my boilerplate example used to make new pages off of a consistent original.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Holloway | Pomona</title> <!--Title for each new page, make sure to change this!-->
+    <link rel="stylesheet" href="CSSPrime.css"> <!--Linking to an external style sheet, as all style sheets should be.-->
+    <link rel="icon" type="image/x-icon" href="sunflower.ico"> <!--flavicons are neat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Fonts are important-->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header> <!--The header is always the same for each page.-->
+    <nav class="topnavbar"> <!--navigation obviously. classes make styling easier-->
+        <div class="navmark">Maya Holloway</div> <!--This is the name on the left side of the navbar, make sure to change this!-->
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pomona.html">Pomona</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Boards.html">Boards</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="intro">
+    <h1>Problem Statement</h1>
+    <p>Small hobby farms or rural homesteads often rely on the sustained attention and effort of one to two individuals working in excess to survive. Increasingly erratic climate swings, large distances, and a lack of sustainable infrastructure inhibit commercial expansion into remote areas and some remote homesteads operate without standard utility connections or internet access. </p>
+    </div>
+    <div class="cardgrid">
+    <a class="cards">
+        <h2>Innovation Claim</h2>
+        <p>Utilizing a local, low power edge processor, embedded sensors relay small packets of data at timed intervals through a long range (LoRa) radio mesh closed data pipeline to a home or gateway node. Focusing on energy efficiency and sustainable power solutions, these dispersed nodes provide a partially autonomous local agent with the information required to generate dashboards and reports for day to day data tracking, as well as notifications for specific, predetermined anomalies. </p>
+    </a>
+    <a class="cards">
+        <h2>Project Description</h2>
+        <p>This project focuses on creating a modular, low cost and low power solution to data collection and visualization in remote, dispersed farms and homesteads. After collecting data via embedded sensors, a low power local processor will convert the sensor data into smaller data ‘packets’ to be transmitted utilizing long range (LoRa) radio transmission to a ‘gateway’ or home node. Once the home node has stored the data to a local server, an open source LLM analyzes the data to generate timed reports and dashboards as well as notifications for specific, predetermined warnings.</p>
+    </a>
+        <a class="cards">
+        <h2>Development Timeline</h2>
+        <p>1-3 months: Finalize system architecture, parts list, power budget</p>
+        <p>3-4 months: Initial software design build and testing, begin integrating first sensor and formalizing data packets</p>
+        <p>4-5 months: First refactor; maximize data and power efficiency</p>
+        <p>5-7 months: Add additional local nodes for additional sensors/check for software modularity; initial testing of local agent</p>
+        <p>7-10 months: Advanced testing of agent/integration of predetermined decisions and choices to be made</p>
+        <p>10-12 months: Final stress testing and edge cases analysis, code and server tidying</p>
+    </a>
+    <a class="cards">
+        <h2>SIP Brief</h2>
+        <p>Coming in Week 4</p>
+    </a>
+    </div>
+    <div class="footer-flower-wrap">
+    <img src="Free-Sunflower-SVG-Cut-File.svg" alt="Sunflower" class="footer-flower">
+</div>
+</main>
+<footer>
+    Copyright 2026 MH
+</footer> <!--Footer is also the same for each page, make sure to change the year!-->
+</body>
+</html>

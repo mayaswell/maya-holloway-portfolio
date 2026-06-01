@@ -1,0 +1,138 @@
+/*I despise doing things more than once. Here are all of my variables*/
+:root {
+  --bg-dark: #2C1A0E;
+  --surface: #4A2E1A;
+  --accent: #F5C518;
+  --accent-hover: #C9A84C;
+  --text: #F5F0E8;
+  --font-heading: 'EB Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+}
+/* Reset basic margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background and layout configuration */
+.topnavbar {
+  display: flex;
+  font-family: var(--font-heading);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-dark);
+  padding: 15px 30px;
+  position: fixed; /* Keeps navbar stuck to the top */
+  top: 0;
+  height: 10vh; /* Adjusts height to 10% of viewport height */
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Brand/Logo styling */
+.navmark {
+  font-family: var(--font-heading);
+  color: var(--text);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Menu list configuration */
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Generates uniform gaps between items */
+}
+
+/* Navigation links styling */
+.navlist a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 8px 12px;
+  font-family: var(--font-heading);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover and active state accents */
+.navlist a:hover {
+  background-color: var(--accent-hover);
+  color: black;
+  border-radius: 4px;
+}
+
+.navlist a.active {
+  background-color: var(--text);
+  border-radius: 4px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  font-family: var(--font-body);
+  color: var(--text);
+}
+main {
+  min-height: 96vh;
+  padding-top: 10vh;
+} /* Accounts for fixed navbar height */
+.intro {
+  background-color: var(--surface);
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border-bottom: 2px solid var(--accent);
+}
+.intro p, .intro h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.cards {
+  text-decoration: none;
+  text-align: center;
+  flex-basis: calc(33.333% - 20px);
+  min-height: 175px;
+  background-color: var(--surface);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  line-height: 1.6;
+}
+
+.cards:hover {
+  background-color: var(--accent-hover);
+  color: black;
+}
+.cardgrid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+footer {
+  background-color: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Centers elements horizontally */
+  align-items: center;     /* Centers elements vertically */
+  flex-wrap: wrap;         /* Allows wrapping on smaller screens */
+}
+.footer-flower-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+.footer-flower {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+  filter: invert(75%) sepia(60%) saturate(600%) hue-rotate(5deg);
+}
